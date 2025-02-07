@@ -168,11 +168,6 @@ playlistButton.addEventListener('click', () => {
     });
 });
 
-function removeBeforeOsho(str) {
-    let index = str.indexOf("osho"); // "osho" ka first occurrence dhundhna
-    return index !== -1 ? "https://itsnjedits.github.io/musicplayer/Thumbnails/" + str.slice(index) : str; // "osho" milne par uske left ka content hatao aur naye URL se replace karo
-}
-
 function loadSongList() {
     const arrayDiv = document.querySelector('.array');
     arrayDiv.innerHTML = '';
@@ -207,19 +202,16 @@ function loadSongList() {
             if (addToPlaylistButton) {
                 event.stopPropagation();
 
-                const imageURL = (addToPlaylistButton.parentElement.parentElement.children[0].children[0].src);
-                
+                const imageURL = trimAndDecodeURL(addToPlaylistButton.parentElement.parentElement.children[0].children[0].src);
+                console.log(imageURL);
                 const title = addToPlaylistButton.parentElement.parentElement.children[0].children[1].children[0].textContent;
                 const artist = addToPlaylistButton.parentElement.parentElement.children[0].children[1].children[1].textContent;
 
                 let fileURL;
                 fileURL = `https://itsnjedits.github.io/musicplayer/Audio/OSHO-${title}.mp3`;
-                let imageURL2;
-                imageURL2 = removeBeforeOsho(imageURL);
-                console.log(imageURL2);
 
                 const songData = {
-                    image: imageURL2,
+                    image: imageURL,
                     file: fileURL,
                     title: title,
                     artist: artist
