@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const playlist = [];
     const audio = new Audio();
-
+    const isLooping = false;
     const title = document.querySelector(".title");
     const playPauseButton = document.getElementById('play-pause');
     const prevButton = document.getElementById('prev');
@@ -28,59 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const playlistButton = document.querySelector(".yourPlaylist");
     
 
-    const iframeContainer = document.createElement("div");
-    iframeContainer.style.position = "fixed";
-    iframeContainer.style.top = "50%";
-    iframeContainer.style.left = "50%";
-    iframeContainer.style.transform = "translate(-50%, -50%)";
-    iframeContainer.style.width = "90%";
-    iframeContainer.style.maxWidth = "774px";
-    iframeContainer.style.width = "90%";
-    iframeContainer.style.height = "82vh";
-    iframeContainer.style.background = "rgb(17 24 39 / 85%)";
-    iframeContainer.style.display = "none";
-    iframeContainer.style.zIndex = "1000";
-    iframeContainer.style.padding = "10px";
-    iframeContainer.style.borderRadius = "9px";
-    iframeContainer.style.borderRadius = "9px";
-    iframeContainer.style.border = "2px solid rgb(41, 236, 254)";
-    iframeContainer.style.boxShadow = "0 0 10px rgba(0,0,0,0.5)";
-
-    const iframe = document.createElement("iframe");
-    iframe.src = "https://docs.google.com/forms/d/e/1FAIpQLSd8Fdms4rUhOCXAgrq9XJdCNeJHg8EX3SS9F6I1PeTM7shh8A/viewform?embedded=true";
-    iframe.width = "100%";
-    iframe.height = "100%";
-    iframe.style.border = "none";
-    iframeContainer.appendChild(iframe);
-
-    // Close button
-    const closeButton = document.createElement("button");
-    closeButton.innerText = "X";
-    closeButton.style.fontSize = "27px";
-closeButton.style.position = "absolute";
-closeButton.style.top = "10px";
-closeButton.style.right = "10px";
-closeButton.style.background = "rgb(194, 0, 0)";
-closeButton.style.fontWeight = "600";
-closeButton.style.color = "white";
-closeButton.style.border = "none";
-closeButton.style.padding = "1px 11px";
-closeButton.style.cursor = "pointer";
-closeButton.style.borderRadius = "8px";
-closeButton.style.margin = "-6px";
-
-    closeButton.addEventListener("click", () => {
-        iframeContainer.style.display = "none";
-    });
-    iframeContainer.appendChild(closeButton);
-
-    document.body.appendChild(iframeContainer);
-
-
-
-
 function trimAndDecodeURL(url) {
-    const baseURL = 'https://itsnjedits.github.io/musicplayer/';
+    const baseURL = 'https://itsnjedits.github.io/osho/';
     if (url.startsWith(baseURL)) {
         // Trim the base URL
         let trimmedURL = url.slice(baseURL.length);
@@ -219,7 +168,10 @@ playlistButton.addEventListener('click', () => {
     });
 });
 
-
+function removeBeforeOsho(str) {
+    let index = str.indexOf("osho"); // "osho" ka first occurrence dhundhna
+    return index !== -1 ? "https://itsnjedits.github.io/musicplayer/Thumbnails/" + str.slice(index) : str; // "osho" milne par uske left ka content hatao aur naye URL se replace karo
+}
 
 function loadSongList() {
     const arrayDiv = document.querySelector('.array');
@@ -255,15 +207,19 @@ function loadSongList() {
             if (addToPlaylistButton) {
                 event.stopPropagation();
 
-                const imageURL = trimAndDecodeURL(addToPlaylistButton.parentElement.parentElement.children[0].children[0].src);
+                const imageURL = (addToPlaylistButton.parentElement.parentElement.children[0].children[0].src);
+                
                 const title = addToPlaylistButton.parentElement.parentElement.children[0].children[1].children[0].textContent;
                 const artist = addToPlaylistButton.parentElement.parentElement.children[0].children[1].children[1].textContent;
 
                 let fileURL;
-                fileURL = `Audio/OSHO-${title}.mp3`;
+                fileURL = `https://itsnjedits.github.io/musicplayer/Audio/OSHO-${title}.mp3`;
+                let imageURL2;
+                imageURL2 = removeBeforeOsho(imageURL);
+                console.log(imageURL2);
 
                 const songData = {
-                    image: imageURL,
+                    image: imageURL2,
                     file: fileURL,
                     title: title,
                     artist: artist
@@ -357,7 +313,7 @@ function fetching(filename){
                     if (isLooping) {
                         index = 0; // Restart from first song
                     } else {
-                        return; // Stop playback on last song
+                         // Stop playback on last song
                     }
                 }
             
