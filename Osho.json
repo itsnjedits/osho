@@ -160,5 +160,157 @@
         "artist": "Osho",
         "image": "Thumbnails/osho2_thumbnail.jpg",
         "file": "Audio/OSHO-Asambhav_Kranti_10.mp3"
-    }
+    },
+    
+        {
+            "title": "Agyat_Ki_Aur_01",
+            "artist": "Osho",
+            "image": "Thumbnails/osho3_thumbnail.jpg",
+            "file": "Audio/OSHO-Agyat_Ki_Aur_01.mp3"
+        },
+        {
+            "title": "Agyat_Ki_Aur_02",
+            "artist": "Osho",
+            "image": "Thumbnails/osho3_thumbnail.jpg",
+            "file": "Audio/OSHO-Agyat_Ki_Aur_02.mp3"
+        },
+        {
+            "title": "Agyat_Ki_Aur_03",
+            "artist": "Osho",
+            "image": "Thumbnails/osho3_thumbnail.jpg",
+            "file": "Audio/OSHO-Agyat_Ki_Aur_03.mp3"
+        },
+        {
+            "title": "Agyat_Ki_Aur_04",
+            "artist": "Osho",
+            "image": "Thumbnails/osho3_thumbnail.jpg",
+            "file": "Audio/OSHO-Agyat_Ki_Aur_04.mp3"
+        },
+        {
+            "title": "Agyat_Ki_Aur_05",
+            "artist": "Osho",
+            "image": "Thumbnails/osho3_thumbnail.jpg",
+            "file": "Audio/OSHO-Agyat_Ki_Aur_05.mp3"
+        },
+        {
+            "title": "Agyat_Ki_Aur_06",
+            "artist": "Osho",
+            "image": "Thumbnails/osho3_thumbnail.jpg",
+            "file": "Audio/OSHO-Agyat_Ki_Aur_06.mp3"
+        },
+        {
+            "title": "Agyat_Ki_Aur_07",
+            "artist": "Osho",
+            "image": "Thumbnails/osho3_thumbnail.jpg",
+            "file": "Audio/OSHO-Agyat_Ki_Aur_07.mp3"
+        },
+        {
+            "title": "Amrit_Dwar_01",
+            "artist": "Osho",
+            "image": "Thumbnails/osho4_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Dwar_01.mp3"
+        },
+        {
+            "title": "Amrit_Dwar_02",
+            "artist": "Osho",
+            "image": "Thumbnails/osho4_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Dwar_02.mp3"
+        },
+        {
+            "title": "Amrit_Dwar_03",
+            "artist": "Osho",
+            "image": "Thumbnails/osho4_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Dwar_03.mp3"
+        },
+        {
+            "title": "Amrit_Dwar_04",
+            "artist": "Osho",
+            "image": "Thumbnails/osho4_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Dwar_04.mp3"
+        },
+        {
+            "title": "Amrit_Dwar_05",
+            "artist": "Osho",
+            "image": "Thumbnails/osho4_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Dwar_05.mp3"
+        },
+        {
+            "title": "Amrit_Dwar_06",
+            "artist": "Osho",
+            "image": "Thumbnails/osho4_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Dwar_06.mp3"
+        },
+        {
+            "title": "Amrit_Ki_Disha_01",
+            "artist": "Osho",
+            "image": "Thumbnails/osho5_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Ki_Disha_01.mp3"
+        },
+        {
+            "title": "Amrit_Ki_Disha_02",
+            "artist": "Osho",
+            "image": "Thumbnails/osho5_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Ki_Disha_02.mp3"
+        },
+        {
+            "title": "Amrit_Ki_Disha_03",
+            "artist": "Osho",
+            "image": "Thumbnails/osho5_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Ki_Disha_03.mp3"
+        },
+        {
+            "title": "Amrit_Ki_Disha_04",
+            "artist": "Osho",
+            "image": "Thumbnails/osho5_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Ki_Disha_04.mp3"
+        },
+        {
+            "title": "Amrit_Ki_Disha_06",
+            "artist": "Osho",
+            "image": "Thumbnails/osho5_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Ki_Disha_06.mp3"
+        },
+        {
+            "title": "Amrit_Ki_Disha_07",
+            "artist": "Osho",
+            "image": "Thumbnails/osho5_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Ki_Disha_07.mp3"
+        },
+        {
+            "title": "Amrit_Ki_Disha_08",
+            "artist": "Osho",
+            "image": "Thumbnails/osho5_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Ki_Disha_08.mp3"
+        },
+        {
+            "title": "Amrit_Varsha_01",
+            "artist": "Osho",
+            "image": "Thumbnails/osho6_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Varsha_01.mp3"
+        },
+        {
+            "title": "Amrit_Varsha_02",
+            "artist": "Osho",
+            "image": "Thumbnails/osho6_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Varsha_02.mp3"
+        },
+        {
+            "title": "Amrit_Varsha_03",
+            "artist": "Osho",
+            "image": "Thumbnails/osho6_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Varsha_03.mp3"
+        },
+        {
+            "title": "Amrit_Varsha_04",
+            "artist": "Osho",
+            "image": "Thumbnails/osho6_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Varsha_04.mp3"
+        },
+        {
+            "title": "Amrit_Varsha_05",
+            "artist": "Osho",
+            "image": "Thumbnails/osho6_thumbnail.jpg",
+            "file": "Audio/OSHO-Amrit_Varsha_05.mp3"
+        }
+    
 ]
