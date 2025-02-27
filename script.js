@@ -41,29 +41,6 @@ function trimAndDecodeURL(url) {
     }
 }
 
-function modifyAndDecodeURL(url) {
-    const baseURL = 'https://itsnjedits.github.io/musicplayer/Thumbnails';
-    const newBaseURL = 'Audio';
-    const oldExtension = '_thumbnail.jpg';
-    const newExtension = '.mp3';
-
-    // Check if the URL starts with the base URL
-    if (url.startsWith(baseURL)) {
-        // Replace the base URL with the new base URL
-        let modifiedURL = url.replace(baseURL, newBaseURL);
-        
-        // Replace '_thumbnail.jpg' with '.mp3'
-        if (modifiedURL.endsWith(oldExtension)) {
-            modifiedURL = modifiedURL.slice(0, -oldExtension.length) + newExtension;
-        }
-
-        // Decode the URL and replace '%20' with spaces
-        return decodeURIComponent(modifiedURL);
-    } else {
-        console.error('URL does not start with the expected base URL.');
-        return url;
-    }
-}
 // Function to remove an item from the playlist and update the UI
 function removeFromPlaylist(index) {
     // Remove the item from the playlist array
@@ -321,9 +298,10 @@ function fetching(filename){
                 audio.onended = null;
             
                 // Load new song
-                audio.src = song.file;
-                audio.load(); // Ensure the new song is loaded properly
-            
+audio.src = `https://itsnjedits.github.io/musicplayer/${song.file}`;
+console.log(audio.src);
+audio.load(); // Ensure the new song is loaded properly
+
                 audio.playbackRate = currentPlaybackRate;
             
                 audio.play().then(() => {
