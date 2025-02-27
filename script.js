@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     musicplayer.style.animationPlayState = 'paused';
     let currentPlaybackRate = parseFloat(speedSelect.value); // Store the current playback speed
     const playlistButton = document.querySelector(".yourPlaylist");
-    
+    let isPlaylist = false;
 
 function trimAndDecodeURL(url) {
     const baseURL = 'https://itsnjedits.github.io/osho/';
@@ -100,7 +100,7 @@ function removeFromPlaylist(index) {
 playlistButton.addEventListener('click', () => {
     const arrayDiv = document.querySelector('.array');
     arrayDiv.innerHTML = '';
-
+    isPlaylist = true;
     songs = playlist.filter((song, index, self) => 
         index === self.findIndex((s) => s.title === song.title)
     );
@@ -217,7 +217,7 @@ function fetching(filename){
 }
     title.addEventListener('click',()=>{
         fetching('Osho.json')
-            
+            isPlaylist = false;
             document.querySelector('.without-ads').innerHTML = `Osho Audio Discourses 🔥`
         })
         
@@ -298,9 +298,18 @@ function fetching(filename){
                 audio.onended = null;
             
                 // Load new song
-audio.src = `https://itsnjedits.github.io/musicplayer/${song.file}`;
-console.log(audio.src);
-audio.load(); // Ensure the new song is loaded properly
+                if(isPlaylist = false){
+
+                    audio.src = `https://itsnjedits.github.io/musicplayer/${song.file}`;
+                    console.log(audio.src);
+                    audio.load(); // Ensure the new song is loaded properly
+                }
+                else{
+                    audio.src = `${song.file}`;
+                    console.log(audio.src);
+                    audio.load(); // Ensure the new song is loaded properly
+
+                }
 
                 audio.playbackRate = currentPlaybackRate;
             
