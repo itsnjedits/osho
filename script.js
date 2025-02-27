@@ -298,18 +298,14 @@ function fetching(filename){
                 audio.onended = null;
             
                 // Load new song
-                if(isPlaylist = false){
-
+                if (!isPlaylist) {
                     audio.src = `https://itsnjedits.github.io/musicplayer/${song.file}`;
-                    console.log(audio.src);
-                    audio.load(); // Ensure the new song is loaded properly
+                } else {
+                    audio.src = song.file.replace("https://itsnjedits.github.io/osho", "https://itsnjedits.github.io/musicplayer");
                 }
-                else{
-                    audio.src = `${song.file}`;
-                    console.log(audio.src);
-                    audio.load(); // Ensure the new song is loaded properly
-
-                }
+                
+                console.log(audio.src);
+                audio.load(); // Ensure the new song is loaded properly
 
                 audio.playbackRate = currentPlaybackRate;
             
