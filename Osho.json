@@ -448,5 +448,65 @@
         "artist": "Osho",
         "image": "Thumbnails/osho8_thumbnail.jpg",
         "file": "Audio/OSHO-Antar_Ki_Khoj_10.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_01",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_01.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_02",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_02.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_03",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_03.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_04",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_04.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_05",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_05.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_06",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_06.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_07",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_07.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_08",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_08.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_09",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_09.mp3"
+    },
+    {
+        "title": "Dhyan_Darshan_10",
+        "artist": "Osho",
+        "image": "Thumbnails/osho9_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Darshan_10.mp3"
     }
 ]
