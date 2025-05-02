@@ -389,8 +389,6 @@
         "image": "Thumbnails/osho10_thumbnail.jpg",
         "file": "Audio/OSHO-Ek_Naya_Dwar_05.mp3"
     },
-
-
     {
         "title": "Antar_Ki_Khoj_01",
         "artist": "Osho",
@@ -510,5 +508,119 @@
         "artist": "Osho",
         "image": "Thumbnails/osho9_thumbnail.jpg",
         "file": "Audio/OSHO-Dhyan_Darshan_10.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_01",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_01.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_02",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_02.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_03",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_03.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_04",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_04.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_05",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_05.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_06",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_06.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_07",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_07.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_08",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_08.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_09",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_09.mp3"
+    },
+    {
+        "title": "Dhyan_Ke_Kamal_10",
+        "artist": "Osho",
+        "image": "Thumbnails/osho12_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Ke_Kamal_10.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_01",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_01.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_02",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_02.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_03",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_03.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_04",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_04.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_05",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_05.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_06",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_06.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_07",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_07.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_08",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_08.mp3"
+    },
+    {
+        "title": "Dhyan_Sutra_09",
+        "artist": "Osho",
+        "image": "Thumbnails/osho11_thumbnail.jpg",
+        "file": "Audio/OSHO-Dhyan_Sutra_09.mp3"
     }
 ]
