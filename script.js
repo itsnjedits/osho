@@ -207,13 +207,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function fetching(filename) {
-        fetch(`${filename}`)
+        fetch('Osho.json')
             .then(response => response.json())
-            .then(data => {
-                songs = data.sort((a, b) => a.title.localeCompare(b.title)); // Sort songs alphabetically
+            .then(seriesList => {
+                // Flatten the structure: convert grouped format into individual song items
+                songs = [];
+
+                seriesList.forEach(series => {
+                    series.files.forEach((file, index) => {
+                        songs.push({
+                            title: `${series.series}_${(index + 1).toString().padStart(2, '0')}`,
+                            artist: series.artist,
+                            image: series.image,
+                            file: file
+                        });
+                    });
+                });
+
+                // Sort alphabetically by title
+                songs.sort((a, b) => a.title.localeCompare(b.title));
+
                 loadSongList();
             })
             .catch(error => console.error('Error fetching songs:', error));
+
     }
     title.addEventListener('click', () => {
         fetching('Osho.json')
@@ -223,7 +240,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     playlistButton.addEventListener('click', () => {
         document.querySelector('.without-ads').innerHTML = `Your Playlist 🔥`
-
     })
 
     function disableAllButtons() {
@@ -256,28 +272,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     fetch('Osho.json')
-  .then(response => response.json())
-  .then(seriesList => {
-    // Flatten the structure: convert grouped format into individual song items
-    songs = [];
+        .then(response => response.json())
+        .then(seriesList => {
+            // Flatten the structure: convert grouped format into individual song items
+            songs = [];
 
-    seriesList.forEach(series => {
-      series.files.forEach((file, index) => {
-        songs.push({
-          title: `${series.series}_${(index + 1).toString().padStart(2, '0')}`,
-          artist: series.artist,
-          image: series.image,
-          file: file
-        });
-      });
-    });
+            seriesList.forEach(series => {
+                series.files.forEach((file, index) => {
+                    songs.push({
+                        title: `${series.series}_${(index + 1).toString().padStart(2, '0')}`,
+                        artist: series.artist,
+                        image: series.image,
+                        file: file
+                    });
+                });
+            });
 
-    // Sort alphabetically by title
-    songs.sort((a, b) => a.title.localeCompare(b.title));
+            // Sort alphabetically by title
+            songs.sort((a, b) => a.title.localeCompare(b.title));
 
-    loadSongList();
-  })
-  .catch(error => console.error('Error fetching songs:', error));
+            loadSongList();
+        })
+        .catch(error => console.error('Error fetching songs:', error));
 
 
     function playSong(index) {
