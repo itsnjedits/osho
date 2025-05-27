@@ -218,24 +218,34 @@
         "artist": "Osho",
         "image": "Thumbnails/osho15_thumbnail.jpg",
         "files": [
-            "Audio/OSHO-Tao_Upanishad_001.mp3",
-            "Audio/OSHO-Tao_Upanishad_002.mp3",
-            "Audio/OSHO-Tao_Upanishad_003.mp3",
-            "Audio/OSHO-Tao_Upanishad_004.mp3",
-            "Audio/OSHO-Tao_Upanishad_005.mp3"
+            "Audio/OSHO-Tao_Upanishad_01.mp3",
+            "Audio/OSHO-Tao_Upanishad_02.mp3",
+            "Audio/OSHO-Tao_Upanishad_03.mp3",
+            "Audio/OSHO-Tao_Upanishad_04.mp3",
+            "Audio/OSHO-Tao_Upanishad_05.mp3",
+            "Audio/OSHO-Tao_Upanishad_06.mp3",
+            "Audio/OSHO-Tao_Upanishad_07.mp3",
+            "Audio/OSHO-Tao_Upanishad_08.mp3",
+            "Audio/OSHO-Tao_Upanishad_09.mp3",
+            "Audio/OSHO-Tao_Upanishad_10.mp3",
+            "Audio/OSHO-Tao_Upanishad_11.mp3",
+            "Audio/OSHO-Tao_Upanishad_12.mp3",
+            "Audio/OSHO-Tao_Upanishad_13.mp3",
+            "Audio/OSHO-Tao_Upanishad_14.mp3",
+            "Audio/OSHO-Tao_Upanishad_15.mp3"
         ]
     },
     {
-        "series": "Vysat_Jeevan_Main_Ishwar_Ki_Khoj",
+        "series": "Vysat_Jeevan_Me_Satya_Ki_Khoj",
         "artist": "Osho",
         "image": "Thumbnails/osho16_thumbnail.jpg",
         "files": [
-            "Audio/OSHO-Vysat_Jeevan_Main_Ishwar_Ki_Khoj_01.mp3",
-            "Audio/OSHO-Vysat_Jeevan_Main_Ishwar_Ki_Khoj_02.mp3",
-            "Audio/OSHO-Vysat_Jeevan_Main_Ishwar_Ki_Khoj_03.mp3",
-            "Audio/OSHO-Vysat_Jeevan_Main_Ishwar_Ki_Khoj_04.mp3",
-            "Audio/OSHO-Vysat_Jeevan_Main_Ishwar_Ki_Khoj_05.mp3",
-            "Audio/OSHO-Vysat_Jeevan_Main_Ishwar_Ki_Khoj_06.mp3"
+            "Audio/OSHO-Vysat_Jeevan_Me_Satya_Ki_Khoj_01.mp3",
+            "Audio/OSHO-Vysat_Jeevan_Me_Satya_Ki_Khoj_02.mp3",
+            "Audio/OSHO-Vysat_Jeevan_Me_Satya_Ki_Khoj_03.mp3",
+            "Audio/OSHO-Vysat_Jeevan_Me_Satya_Ki_Khoj_04.mp3",
+            "Audio/OSHO-Vysat_Jeevan_Me_Satya_Ki_Khoj_05.mp3",
+            "Audio/OSHO-Vysat_Jeevan_Me_Satya_Ki_Khoj_06.mp3"
         ]
     }
 ]
