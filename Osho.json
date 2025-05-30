@@ -1,29 +1,5 @@
 [
     {
-        "series": "Adhyatam_Upanishad",
-        "artist": "Osho",
-        "image": "Thumbnails/osho1_thumbnail.jpg",
-        "files": [
-            "Audio/OSHO-Adhyatam_Upanishad_01.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_02.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_03.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_04.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_05.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_06.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_07.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_08.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_09.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_10.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_11.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_12.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_13.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_14.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_15.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_16.mp3",
-            "Audio/OSHO-Adhyatam_Upanishad_17.mp3"
-        ]
-    },
-    {
         "series": "Asambhav_Kranti",
         "artist": "Osho",
         "image": "Thumbnails/osho2_thumbnail.jpg",
