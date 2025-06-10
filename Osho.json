@@ -114,23 +114,6 @@
         ]
     },
     {
-        "series": "Dhyan_Darshan",
-        "artist": "Osho",
-        "image": "Thumbnails/osho9_thumbnail.jpg",
-        "files": [
-            "Audio/OSHO-Dhyan_Darshan_01.mp3",
-            "Audio/OSHO-Dhyan_Darshan_02.mp3",
-            "Audio/OSHO-Dhyan_Darshan_03.mp3",
-            "Audio/OSHO-Dhyan_Darshan_04.mp3",
-            "Audio/OSHO-Dhyan_Darshan_05.mp3",
-            "Audio/OSHO-Dhyan_Darshan_06.mp3",
-            "Audio/OSHO-Dhyan_Darshan_07.mp3",
-            "Audio/OSHO-Dhyan_Darshan_08.mp3",
-            "Audio/OSHO-Dhyan_Darshan_09.mp3",
-            "Audio/OSHO-Dhyan_Darshan_10.mp3"
-        ]
-    },
-    {
         "series": "Dhyan_Ke_Kamal",
         "artist": "Osho",
         "image": "Thumbnails/osho12_thumbnail.jpg",
