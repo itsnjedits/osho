@@ -97,23 +97,6 @@
         ]
     },
     {
-        "series": "Antar_Ki_Khoj",
-        "artist": "Osho",
-        "image": "Thumbnails/osho8_thumbnail.jpg",
-        "files": [
-            "Audio/OSHO-Antar_Ki_Khoj_01.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_02.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_03.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_04.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_05.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_06.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_07.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_08.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_09.mp3",
-            "Audio/OSHO-Antar_Ki_Khoj_10.mp3"
-        ]
-    },
-    {
         "series": "Dhyan_Ke_Kamal",
         "artist": "Osho",
         "image": "Thumbnails/osho12_thumbnail.jpg",
