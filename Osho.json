@@ -2,7 +2,7 @@
   {
     "series": "Asambhav Kranti",
     "artist": "Osho",
-    "image": "Thumbnails/osho2 thumbnail.jpg",
+    "image": "Thumbnails/osho2_thumbnail.jpg",
     "files": [
       "Audio/Asambhav Kranti 01.mp3",
       "Audio/Asambhav Kranti 02.mp3",
@@ -19,7 +19,7 @@
   {
     "series": "Agyat Ki Aur",
     "artist": "Osho",
-    "image": "Thumbnails/osho3 thumbnail.jpg",
+    "image": "Thumbnails/osho3_thumbnail.jpg",
     "files": [
       "Audio/Agyat Ki Aur 01.mp3",
       "Audio/Agyat Ki Aur 02.mp3",
@@ -33,7 +33,7 @@
   {
     "series": "Amrit Dwar",
     "artist": "Osho",
-    "image": "Thumbnails/osho4 thumbnail.jpg",
+    "image": "Thumbnails/osho4_thumbnail.jpg",
     "files": [
       "Audio/Amrit Dwar 01.mp3",
       "Audio/Amrit Dwar 02.mp3",
@@ -46,7 +46,7 @@
   {
     "series": "Amrit Ki Disha",
     "artist": "Osho",
-    "image": "Thumbnails/osho5 thumbnail.jpg",
+    "image": "Thumbnails/osho5_thumbnail.jpg",
     "files": [
       "Audio/Amrit Ki Disha 01.mp3",
       "Audio/Amrit Ki Disha 02.mp3",
@@ -61,7 +61,7 @@
   {
     "series": "Amrit Varsha",
     "artist": "Osho",
-    "image": "Thumbnails/osho6 thumbnail.jpg",
+    "image": "Thumbnails/osho6_thumbnail.jpg",
     "files": [
       "Audio/Amrit Varsha 01.mp3",
       "Audio/Amrit Varsha 02.mp3",
@@ -73,7 +73,7 @@
   {
     "series": "Ek Ek Kadam",
     "artist": "Osho",
-    "image": "Thumbnails/osho7 thumbnail.jpg",
+    "image": "Thumbnails/osho7_thumbnail.jpg",
     "files": [
       "Audio/Ek Ek Kadam 01.mp3",
       "Audio/Ek Ek Kadam 02.mp3",
@@ -87,7 +87,7 @@
   {
     "series": "Ek Naya Dwar",
     "artist": "Osho",
-    "image": "Thumbnails/osho10 thumbnail.jpg",
+    "image": "Thumbnails/osho10_thumbnail.jpg",
     "files": [
       "Audio/Ek Naya Dwar 01.mp3",
       "Audio/Ek Naya Dwar 02.mp3",
@@ -99,7 +99,7 @@
   {
     "series": "Dhyan Ke Kamal",
     "artist": "Osho",
-    "image": "Thumbnails/osho12 thumbnail.jpg",
+    "image": "Thumbnails/osho12_thumbnail.jpg",
     "files": [
       "Audio/Dhyan Ke Kamal 01.mp3",
       "Audio/Dhyan Ke Kamal 02.mp3",
@@ -116,7 +116,7 @@
   {
     "series": "Dhyan Sutra",
     "artist": "Osho",
-    "image": "Thumbnails/osho11 thumbnail.jpg",
+    "image": "Thumbnails/osho11_thumbnail.jpg",
     "files": [
       "Audio/Dhyan Sutra 01.mp3",
       "Audio/Dhyan Sutra 02.mp3",
@@ -132,7 +132,7 @@
   {
     "series": "Mahavir Ya Mahavinash",
     "artist": "Osho",
-    "image": "Thumbnails/osho13 thumbnail.jpg",
+    "image": "Thumbnails/osho13_thumbnail.jpg",
     "files": [
       "Audio/Mahavir Ya Mahavinash 01.mp3",
       "Audio/Mahavir Ya Mahavinash 02.mp3",
@@ -147,7 +147,7 @@
   {
     "series": "Prem Darshan",
     "artist": "Osho",
-    "image": "Thumbnails/osho14 thumbnail.jpg",
+    "image": "Thumbnails/osho14_thumbnail.jpg",
     "files": [
       "Audio/Prem Darshan 01.mp3",
       "Audio/Prem Darshan 02.mp3",
@@ -158,7 +158,7 @@
   {
     "series": "Tao Upanishad",
     "artist": "Osho",
-    "image": "Thumbnails/osho15 thumbnail.jpg",
+    "image": "Thumbnails/osho15_thumbnail.jpg",
     "files": [
       "Audio/Tao Upanishad 01.mp3",
       "Audio/Tao Upanishad 02.mp3",
@@ -180,7 +180,7 @@
   {
     "series": "Vysat Jeevan Me Satya Ki Khoj",
     "artist": "Osho",
-    "image": "Thumbnails/osho16 thumbnail.jpg",
+    "image": "Thumbnails/osho16_thumbnail.jpg",
     "files": [
       "Audio/Vysat Jeevan Me Satya Ki Khoj 01.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 02.mp3",
