@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const artist = addToPlaylistButton.parentElement.parentElement.children[0].children[1].children[1].textContent;
 
                     let fileURL;
-                    fileURL = `https://itsnjedits.github.io/musicplayer/Audio/OSHO-${title}.mp3`;
+                    fileURL = `https://itsnjedits.github.io/musicplayer/Audio/${title}.mp3`;
 
                     const songData = {
                         image: imageURL,
