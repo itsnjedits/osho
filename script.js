@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 seriesList.forEach(series => {
                     series.files.forEach((file, index) => {
                         songs.push({
-                            title: `${series.series}_${(index + 1).toString().padStart(2, '0')}`,
+                            title: `${series.series} ${(index + 1).toString().padStart(2, '0')}`,
                             artist: series.artist,
                             image: series.image,
                             file: file
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
             seriesList.forEach(series => {
                 series.files.forEach((file, index) => {
                     songs.push({
-                        title: `${series.series}_${(index + 1).toString().padStart(2, '0')}`,
+                        title: `${series.series} ${(index + 1).toString().padStart(2, '0')}`,
                         artist: series.artist,
                         image: series.image,
                         file: file
