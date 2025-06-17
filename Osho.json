@@ -17,60 +17,6 @@
     ]
   },
   {
-    "series": "Agyat Ki Aur",
-    "artist": "Osho",
-    "image": "Thumbnails/osho3_thumbnail.jpg",
-    "files": [
-      "Audio/Agyat Ki Aur 01.mp3",
-      "Audio/Agyat Ki Aur 02.mp3",
-      "Audio/Agyat Ki Aur 03.mp3",
-      "Audio/Agyat Ki Aur 04.mp3",
-      "Audio/Agyat Ki Aur 05.mp3",
-      "Audio/Agyat Ki Aur 06.mp3",
-      "Audio/Agyat Ki Aur 07.mp3"
-    ]
-  },
-  {
-    "series": "Amrit Dwar",
-    "artist": "Osho",
-    "image": "Thumbnails/osho4_thumbnail.jpg",
-    "files": [
-      "Audio/Amrit Dwar 01.mp3",
-      "Audio/Amrit Dwar 02.mp3",
-      "Audio/Amrit Dwar 03.mp3",
-      "Audio/Amrit Dwar 04.mp3",
-      "Audio/Amrit Dwar 05.mp3",
-      "Audio/Amrit Dwar 06.mp3"
-    ]
-  },
-  {
-    "series": "Amrit Ki Disha",
-    "artist": "Osho",
-    "image": "Thumbnails/osho5_thumbnail.jpg",
-    "files": [
-      "Audio/Amrit Ki Disha 01.mp3",
-      "Audio/Amrit Ki Disha 02.mp3",
-      "Audio/Amrit Ki Disha 03.mp3",
-      "Audio/Amrit Ki Disha 04.mp3",
-      "Audio/Amrit Ki Disha 05.mp3",
-      "Audio/Amrit Ki Disha 06.mp3",
-      "Audio/Amrit Ki Disha 07.mp3",
-      "Audio/Amrit Ki Disha 08.mp3"
-    ]
-  },
-  {
-    "series": "Amrit Varsha",
-    "artist": "Osho",
-    "image": "Thumbnails/osho6_thumbnail.jpg",
-    "files": [
-      "Audio/Amrit Varsha 01.mp3",
-      "Audio/Amrit Varsha 02.mp3",
-      "Audio/Amrit Varsha 03.mp3",
-      "Audio/Amrit Varsha 04.mp3",
-      "Audio/Amrit Varsha 05.mp3"
-    ]
-  },
-  {
     "series": "Ek Ek Kadam",
     "artist": "Osho",
     "image": "Thumbnails/osho7_thumbnail.jpg",
@@ -111,22 +57,6 @@
       "Audio/Dhyan Ke Kamal 08.mp3",
       "Audio/Dhyan Ke Kamal 09.mp3",
       "Audio/Dhyan Ke Kamal 10.mp3"
-    ]
-  },
-  {
-    "series": "Dhyan Sutra",
-    "artist": "Osho",
-    "image": "Thumbnails/osho11_thumbnail.jpg",
-    "files": [
-      "Audio/Dhyan Sutra 01.mp3",
-      "Audio/Dhyan Sutra 02.mp3",
-      "Audio/Dhyan Sutra 03.mp3",
-      "Audio/Dhyan Sutra 04.mp3",
-      "Audio/Dhyan Sutra 05.mp3",
-      "Audio/Dhyan Sutra 06.mp3",
-      "Audio/Dhyan Sutra 07.mp3",
-      "Audio/Dhyan Sutra 08.mp3",
-      "Audio/Dhyan Sutra 09.mp3"
     ]
   },
   {
