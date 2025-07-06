@@ -206,32 +206,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function fetching(filename) {
-        fetch('Osho.json')
-            .then(response => response.json())
-            .then(seriesList => {
-                // Flatten the structure: convert grouped format into individual song items
-                songs = [];
+function fetching(filename) {
+    fetch('Osho.json')
+        .then(response => response.json())
+        .then(seriesList => {
+            songs = [];
 
-                seriesList.forEach(series => {
-                    series.files.forEach((file, index) => {
-                        songs.push({
-                            title: `${series.series} ${(index + 1).toString().padStart(2, '0')}`,
-                            artist: series.artist,
-                            image: series.image,
-                            file: file
-                        });
-                    });
+            seriesList.forEach(series => {
+                // Step 1: Sort this series.files by actual number
+                const sortedFiles = series.files.slice().sort((a, b) => {
+                    const numA = parseInt(a.match(/(\d+)\.mp3$/)?.[1] || '0');
+                    const numB = parseInt(b.match(/(\d+)\.mp3$/)?.[1] || '0');
+                    return numA - numB;
                 });
 
-                // Sort alphabetically by title
-                songs.sort((a, b) => a.title.localeCompare(b.title));
+                // Step 2: Push files into songs list with correct title
+                sortedFiles.forEach(file => {
+                    const fileName = file.split('/').pop();
+                    const match = fileName.match(/(\d+)\.mp3$/);
+                    const number = match ? match[1] : '00';
 
-                loadSongList();
-            })
-            .catch(error => console.error('Error fetching songs:', error));
+                    songs.push({
+                        title: `${series.series} ${number}`,
+                        artist: series.artist,
+                        image: series.image,
+                        file: file
+                    });
+                });
+            });
 
-    }
+            // No need to sort songs here again (they’re already grouped and sorted by series)
+            loadSongList();
+        })
+        .catch(error => console.error('Error fetching songs:', error));
+}
+fetching('Osho.json')
+
     title.addEventListener('click', () => {
         fetching('Osho.json')
         isPlaylist = false;
@@ -271,30 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
     disableAllButtons();
 
 
-    fetch('Osho.json')
-        .then(response => response.json())
-        .then(seriesList => {
-            // Flatten the structure: convert grouped format into individual song items
-            songs = [];
-
-            seriesList.forEach(series => {
-                series.files.forEach((file, index) => {
-                    songs.push({
-                        title: `${series.series} ${(index + 1).toString().padStart(2, '0')}`,
-                        artist: series.artist,
-                        image: series.image,
-                        file: file
-                    });
-                });
-            });
-
-            // Sort alphabetically by title
-            songs.sort((a, b) => a.title.localeCompare(b.title));
-
-            loadSongList();
-        })
-        .catch(error => console.error('Error fetching songs:', error));
-
+    
 
     function playSong(index) {
         mainContainer.classList.remove("mb-28");
