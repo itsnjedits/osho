@@ -17,6 +17,50 @@
     ]
   },
   {
+    "series": "Tao Upanishad",
+    "artist": "Osho",
+    "image": "Thumbnails/osho15_thumbnail.jpg",
+    "files": [
+      "Audio/Tao Upanishad 21.mp3",
+      "Audio/Tao Upanishad 22.mp3",
+      "Audio/Tao Upanishad 23.mp3",
+      "Audio/Tao Upanishad 24.mp3",
+      "Audio/Tao Upanishad 25.mp3",
+      "Audio/Tao Upanishad 26.mp3",
+      "Audio/Tao Upanishad 27.mp3",
+      "Audio/Tao Upanishad 28.mp3",
+      "Audio/Tao Upanishad 29.mp3",
+      "Audio/Tao Upanishad 30.mp3"
+    ]
+  },
+  {
+    "series": "Vigyan Bhairav Tantra",
+    "artist": "Osho",
+    "image": "Thumbnails/osho17_thumbnail.jpg",
+    "files": [
+      "Audio/Vigyan Bhairav Tantra 01.mp3",
+      "Audio/Vigyan Bhairav Tantra 02.mp3",
+      "Audio/Vigyan Bhairav Tantra 03.mp3",
+      "Audio/Vigyan Bhairav Tantra 04.mp3",
+      "Audio/Vigyan Bhairav Tantra 05.mp3",
+      "Audio/Vigyan Bhairav Tantra 06.mp3",
+      "Audio/Vigyan Bhairav Tantra 07.mp3",
+      "Audio/Vigyan Bhairav Tantra 08.mp3",
+      "Audio/Vigyan Bhairav Tantra 09.mp3",
+      "Audio/Vigyan Bhairav Tantra 10.mp3",
+      "Audio/Vigyan Bhairav Tantra 11.mp3",
+      "Audio/Vigyan Bhairav Tantra 12.mp3",
+      "Audio/Vigyan Bhairav Tantra 13.mp3",
+      "Audio/Vigyan Bhairav Tantra 14.mp3",
+      "Audio/Vigyan Bhairav Tantra 15.mp3",
+      "Audio/Vigyan Bhairav Tantra 16.mp3",
+      "Audio/Vigyan Bhairav Tantra 17.mp3",
+      "Audio/Vigyan Bhairav Tantra 18.mp3",
+      "Audio/Vigyan Bhairav Tantra 19.mp3",
+      "Audio/Vigyan Bhairav Tantra 20.mp3"
+    ]
+  },
+  {
     "series": "Dhyan Ke Kamal",
     "artist": "Osho",
     "image": "Thumbnails/osho12_thumbnail.jpg",
@@ -48,23 +92,7 @@
       "Audio/Mahavir Ya Mahavinash 09.mp3"
     ]
   },
-  {
-    "series": "Tao Upanishad",
-    "artist": "Osho",
-    "image": "Thumbnails/osho15_thumbnail.jpg",
-    "files": [
-      "Audio/Tao Upanishad 21.mp3",
-      "Audio/Tao Upanishad 22.mp3",
-      "Audio/Tao Upanishad 23.mp3",
-      "Audio/Tao Upanishad 24.mp3",
-      "Audio/Tao Upanishad 25.mp3",
-      "Audio/Tao Upanishad 26.mp3",
-      "Audio/Tao Upanishad 27.mp3",
-      "Audio/Tao Upanishad 28.mp3",
-      "Audio/Tao Upanishad 29.mp3",
-      "Audio/Tao Upanishad 30.mp3"
-    ]
-  },
+  
   {
     "series": "Vysat Jeevan Me Satya Ki Khoj",
     "artist": "Osho",
@@ -76,33 +104,6 @@
       "Audio/Vysat Jeevan Me Satya Ki Khoj 04.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 05.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 06.mp3"
-    ]
-  },
-  {
-    "series": "Vigyan Bhairav Tantra",
-    "artist": "Osho",
-    "image": "Thumbnails/osho17_thumbnail.jpg",
-    "files": [
-      "Audio/Vigyan Bhairav Tantra 01.mp3",
-      "Audio/Vigyan Bhairav Tantra 02.mp3",
-      "Audio/Vigyan Bhairav Tantra 03.mp3",
-      "Audio/Vigyan Bhairav Tantra 04.mp3",
-      "Audio/Vigyan Bhairav Tantra 05.mp3",
-      "Audio/Vigyan Bhairav Tantra 06.mp3",
-      "Audio/Vigyan Bhairav Tantra 07.mp3",
-      "Audio/Vigyan Bhairav Tantra 08.mp3",
-      "Audio/Vigyan Bhairav Tantra 09.mp3",
-      "Audio/Vigyan Bhairav Tantra 10.mp3",
-      "Audio/Vigyan Bhairav Tantra 11.mp3",
-      "Audio/Vigyan Bhairav Tantra 12.mp3",
-      "Audio/Vigyan Bhairav Tantra 13.mp3",
-      "Audio/Vigyan Bhairav Tantra 14.mp3",
-      "Audio/Vigyan Bhairav Tantra 15.mp3",
-      "Audio/Vigyan Bhairav Tantra 16.mp3",
-      "Audio/Vigyan Bhairav Tantra 17.mp3",
-      "Audio/Vigyan Bhairav Tantra 18.mp3",
-      "Audio/Vigyan Bhairav Tantra 19.mp3",
-      "Audio/Vigyan Bhairav Tantra 20.mp3"
     ]
   }
 ]
