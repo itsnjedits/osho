@@ -2,7 +2,7 @@
   {
     "series": "Asambhav Kranti",
     "artist": "Osho",
-    "image": "Thumbnails/osho2_thumbnail.jpg",
+    "image": "Thumbnails/osho18_thumbnail.jpg",
     "files": [
       "Audio/Asambhav Kranti 01.mp3",
       "Audio/Asambhav Kranti 02.mp3",
@@ -19,18 +19,8 @@
   {
     "series": "Tao Upanishad",
     "artist": "Osho",
-    "image": "Thumbnails/osho15_thumbnail.jpg",
+    "image": "Thumbnails/osho6_thumbnail.jpg",
     "files": [
-      "Audio/Tao Upanishad 21.mp3",
-      "Audio/Tao Upanishad 22.mp3",
-      "Audio/Tao Upanishad 23.mp3",
-      "Audio/Tao Upanishad 24.mp3",
-      "Audio/Tao Upanishad 25.mp3",
-      "Audio/Tao Upanishad 26.mp3",
-      "Audio/Tao Upanishad 27.mp3",
-      "Audio/Tao Upanishad 28.mp3",
-      "Audio/Tao Upanishad 29.mp3",
-      "Audio/Tao Upanishad 30.mp3",
       "Audio/Tao Upanishad 31.mp3",
       "Audio/Tao Upanishad 32.mp3",
       "Audio/Tao Upanishad 33.mp3",
@@ -44,36 +34,51 @@
     ]
   },
   {
-    "series": "Vigyan Bhairav Tantra",
+    "series": "Vigyan Bhairav Tantra Vol 1",
     "artist": "Osho",
-    "image": "Thumbnails/osho17_thumbnail.jpg",
+    "image": "Thumbnails/osho9_thumbnail.jpg",
     "files": [
-      "Audio/Vigyan Bhairav Tantra 11.mp3",
-      "Audio/Vigyan Bhairav Tantra 12.mp3",
-      "Audio/Vigyan Bhairav Tantra 13.mp3",
-      "Audio/Vigyan Bhairav Tantra 14.mp3",
-      "Audio/Vigyan Bhairav Tantra 15.mp3",
-      "Audio/Vigyan Bhairav Tantra 16.mp3",
-      "Audio/Vigyan Bhairav Tantra 17.mp3",
-      "Audio/Vigyan Bhairav Tantra 18.mp3",
-      "Audio/Vigyan Bhairav Tantra 19.mp3",
-      "Audio/Vigyan Bhairav Tantra 20.mp3",
-      "Audio/Vigyan Bhairav Tantra 21.mp3",
-      "Audio/Vigyan Bhairav Tantra 22.mp3",
-      "Audio/Vigyan Bhairav Tantra 23.mp3",
-      "Audio/Vigyan Bhairav Tantra 24.mp3",
-      "Audio/Vigyan Bhairav Tantra 25.mp3",
-      "Audio/Vigyan Bhairav Tantra 26.mp3",
-      "Audio/Vigyan Bhairav Tantra 27.mp3",
-      "Audio/Vigyan Bhairav Tantra 28.mp3",
-      "Audio/Vigyan Bhairav Tantra 29.mp3",
-      "Audio/Vigyan Bhairav Tantra 30.mp3"
+      "Audio/Vigyan Bhairav Tantra Vol 1 21.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 22.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 23.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 24.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 25.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 26.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 27.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 28.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 29.mp3",
+      "Audio/Vigyan Bhairav Tantra Vol 1 30.mp3"
+    ]
+  },
+  {
+    "series": "Geeta Darshan Vol-1 & 2",
+    "artist": "Osho",
+    "image": "Thumbnails/osho4_thumbnail.jpg",
+    "files": [
+      "Audio/Geeta Darshan Vol-1 & 2 01.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 02.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 03.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 04.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 05.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 06.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 07.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 08.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 09.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 10.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 11.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 12.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 13.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 14.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 15.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 16.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 17.mp3",
+      "Audio/Geeta Darshan Vol-1 & 2 18.mp3"
     ]
   },
   {
     "series": "Mahavir Ya Mahavinash",
     "artist": "Osho",
-    "image": "Thumbnails/osho13_thumbnail.jpg",
+    "image": "Thumbnails/osho8_thumbnail.jpg",
     "files": [
       "Audio/Mahavir Ya Mahavinash 01.mp3",
       "Audio/Mahavir Ya Mahavinash 02.mp3",
@@ -85,11 +90,10 @@
       "Audio/Mahavir Ya Mahavinash 09.mp3"
     ]
   },
-  
   {
     "series": "Vysat Jeevan Me Satya Ki Khoj",
     "artist": "Osho",
-    "image": "Thumbnails/osho16_thumbnail.jpg",
+    "image": "Thumbnails/osho3_thumbnail.jpg",
     "files": [
       "Audio/Vysat Jeevan Me Satya Ki Khoj 01.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 02.mp3",
