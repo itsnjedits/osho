@@ -1,256 +1,156 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const audio = new Audio();
+    const playlist = [];
     let songs = [];
     let currentIndex = 0;
-    const playlist = [];
-    const audio = new Audio();
-    const isLooping = false;
-    const title = document.querySelector(".title");
-    const playPauseButton = document.getElementById('play-pause');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    const songImage = document.getElementById('song-image');
-    const songTitle = document.querySelector('.song-title');
-    const songArtist = document.querySelector('.song-artist');
-    // const playFromStartButton = document.querySelector('.play-from-start');
-    const progress = document.getElementById('progress');
-    const timeCompleted = document.getElementById('timecompleted');
-    const timeTotal = document.getElementById('timetotal');
-    const songDescription = document.querySelector('.song-description');
-    const speedSelect = document.getElementById('speed');
-    const forward = document.getElementById('forward');
-    const rewind = document.getElementById('rewind');
-    const volumeSlider = document.querySelector('.volume-slider'); // Add this line to select the volume slider
-    const slider = document.querySelector('.volume-slider');
-    const musicplayer = document.getElementsByClassName('musicplayer')[0];
-    const mainContainer = document.getElementsByTagName("main")[0];
-    musicplayer.style.animationPlayState = 'paused';
-    let currentPlaybackRate = parseFloat(speedSelect.value); // Store the current playback speed
-    const playlistButton = document.querySelector(".yourPlaylist");
     let isPlaylist = false;
+    let isLooping = false;
+    let currentPlaybackRate = 1.0;
 
-    function trimAndDecodeURL(url) {
+    const elements = {
+        title: document.querySelector('.title'),
+        heading: document.querySelector('.without-ads'),
+        playlistButton: document.querySelector('.yourPlaylist'),
+        arrayDiv: document.querySelector('.array'),
+        playPauseButton: document.getElementById('play-pause'),
+        prevButton: document.getElementById('prev'),
+        nextButton: document.getElementById('next'),
+        songImage: document.getElementById('song-image'),
+        songTitle: document.querySelector('.song-title'),
+        songArtist: document.querySelector('.song-artist'),
+        progress: document.getElementById('progress'),
+        timeCompleted: document.getElementById('timecompleted'),
+        timeTotal: document.getElementById('timetotal'),
+        songDescription: document.querySelector('.song-description'),
+        speedSelect: document.getElementById('speed'),
+        forward: document.getElementById('forward'),
+        rewind: document.getElementById('rewind'),
+        volumeSlider: document.querySelector('.volume-slider'),
+        musicplayer: document.getElementsByClassName('musicplayer')[0],
+        mainContainer: document.getElementsByTagName("main")[0]
+    };
+
+    const {
+        title,
+        heading,
+        playlistButton,
+        arrayDiv,
+        playPauseButton,
+        prevButton,
+        nextButton,
+        forward,
+        rewind,
+        songImage,
+        songTitle,
+        songArtist,
+        progress,
+        timeCompleted,
+        timeTotal,
+        songDescription,
+        speedSelect,
+        volumeSlider,
+        musicplayer,
+        mainContainer
+    } = elements;
+
+    musicplayer.style.animationPlayState = 'paused';
+
+    const trimAndDecodeURL = (url) => {
         const baseURL = 'https://itsnjedits.github.io/osho/';
-        if (url.startsWith(baseURL)) {
-            // Trim the base URL
-            let trimmedURL = url.slice(baseURL.length);
-            // Decode %20 to spaces
-            return decodeURIComponent(trimmedURL);
-        } else {
-            console.error('URL does not start with the expected base URL.');
-            return url;
-        }
-    }
+        if (typeof url !== 'string') return '';
+        return url.startsWith(baseURL) ? decodeURIComponent(url.slice(baseURL.length)) : url;
+    };
 
-    // Function to remove an item from the playlist and update the UI
-    function removeFromPlaylist(index) {
-        // Remove the item from the playlist array
+    const renderSongs = (songArray, allowRemoval = false) => {
+        arrayDiv.innerHTML = '';
+        songArray.forEach((song, index) => {
+            const item = document.createElement('div');
+            item.className = 'item flex justify-between items-center bg-gray-700 rounded-xl p-2 max-md:p-1 mx-4 max-md:mx-2 min-md:hover:bg-gray-600 duration-300 cursor-pointer';
+            item.dataset.index = index;
+            item.innerHTML = `
+                <div class="text-white flex items-center gap-x-4 max-md:gap-x-2">
+                    <div class="w-32 max-md:w-24 aspect-[4/3] overflow-hidden rounded-lg">
+                        <img src="${song.image}" class="w-full h-full object-cover" alt="${song.title}">
+                    </div>
+                    <div class="text">
+                        <h2 class="max-md:text-base song-title font-semibold text-xl max-[500px]:text-[13.5px]">${song.title}</h2>
+                        <p class="song-artist max-md:text-sm text-gray-300 max-[500px]:text-[12px]">${song.artist}</p>
+                    </div>
+                </div>
+                <div class="song-play flex items-center gap-x-2 mr-3 max-md:mr-2 max-md:gap-x-1">
+                    <div class="visualizer hidden">
+                        ${Array.from({ length: 5 }, (_, i) => `<div class="bar max-md:w-[2px] bar${i + 1}"></div>`).join('')}
+                    </div>
+                    <p class="text-5xl ${allowRemoval ? 'remove-from-playlist' : 'add-to-playlist'} text-[#2b8bff] cursor-pointer hover:text-[#29ecfe] max-md:text-2xl "><i class='bx bx-${allowRemoval ? 'minus' : 'plus'}'></i></p>
+                </div>`;
+
+            item.querySelector(`.${allowRemoval ? 'remove-from-playlist' : 'add-to-playlist'}`).addEventListener('click', (e) => {
+                e.stopPropagation();
+                allowRemoval ? removeFromPlaylist(index) : addToPlaylist(e);
+            });
+
+            item.addEventListener('click', () => playSong(index));
+            arrayDiv.appendChild(item);
+        });
+    };
+
+    const removeFromPlaylist = (index) => {
         playlist.splice(index, 1);
+        songs = [...new Set(playlist.map(JSON.stringify))].map(JSON.parse);
+        renderSongs(songs, true);
+    };
 
-        // Update the songs array to reflect changes
-        songs = playlist.filter((song, idx, self) =>
-            idx === self.findIndex((s) => s.image === song.image)
-        );
+    const addToPlaylist = (event) => {
+        const button = event.target.closest('.add-to-playlist');
+        const parent = button.closest('.item');
+        const image = trimAndDecodeURL(parent.querySelector('img')?.src || '');
+        const title = parent.querySelector('.song-title')?.textContent || 'Unknown Title';
+        const artist = parent.querySelector('.song-artist')?.textContent || 'Unknown Artist';
+        const file = `https://itsnjedits.github.io/musicplayer/Audio/${title}.mp3`;
 
-        // Clear the current playlist display
-        const arrayDiv = document.querySelector('.array');
-        arrayDiv.innerHTML = '';
+        const songData = { image, title, artist, file };
+        playlist.push(songData);
+        console.log("Added song to playlist:", songData);
+    };
 
-        // Re-render the playlist after removal
-        songs.forEach((song, newIndex) => {
-            const itemDiv = document.createElement('div');
-            itemDiv.className = 'item flex justify-between items-center bg-gray-700 rounded-xl p-2 max-md:p-1 mx-4 max-md:mx-2 min-md:hover:bg-gray-600 duration-300 cursor-pointer';
-            itemDiv.dataset.index = newIndex;
-            itemDiv.innerHTML =
-                `<div class="text-white flex items-center gap-x-4 max-md:gap-x-2">
-                <img src="${song.image}" class="max-md:max-md:h-12 max-md:w-20 w-36 h-20 object-cover rounded-lg object-top" alt="${song.title}">
-                <div class="text">
-                    <h2 class="max-md:text-base song-title font-semibold text-xl max-[500px]:text-[13.5px]">${song.title}</h2>
-                    <p class="song-artist max-md:text-sm text-gray-300 max-[500px]:text-[12px]">${song.artist}</p>
-                </div>
-            </div>
-            <div class="song-play flex items-center gap-x-2 mr-3 max-md:mr-2 max-md:gap-x-1">
-                <div class="visualizer hidden">
-                    <div class="bar max-md:w-[2px] bar1"></div>
-                    <div class="bar max-md:w-[2px] bar2"></div>
-                    <div class="bar max-md:w-[2px] bar3"></div>
-                    <div class="bar max-md:w-[2px] bar4"></div>
-                    <div class="bar max-md:w-[2px] bar5"></div>
-                </div>
-                <p class="text-5xl remove-from-playlist  text-[#2b8bff] cursor-pointer hover:text-[#29ecfe] max-md:text-2xl "><i class='bx bx-minus'></i></p>
-                
-            </div>`;
+    const fetching = (filename) => {
+        fetch(filename)
+            .then(res => res.json())
+            .then(seriesList => {
+                songs = seriesList.flatMap(series => {
+                    return series.files
+                        .slice()
+                        .sort((a, b) => parseInt(a.match(/(\d+)\.mp3$/)?.[1] || '0') - parseInt(b.match(/(\d+)\.mp3$/)?.[1] || '0'))
+                        .map(file => {
+                            const num = file.match(/(\d+)\.mp3$/)?.[1] || '00';
+                            return {
+                                title: `${series.series} ${num}`,
+                                artist: series.artist,
+                                image: series.image,
+                                file
+                            };
+                        });
+                });
+                renderSongs(songs);
+            })
+            .catch(err => console.error('Error fetching songs:', err));
+    };
 
-            // Remove button ka event listener
-            itemDiv.querySelector('.remove-from-playlist').addEventListener('click', (e) => {
-                e.stopPropagation(); // Ye ensure karega ki parent click event trigger na ho
-                removeFromPlaylist(newIndex);
-            });
-
-            // Poore itemDiv pe click karne par song play hoga
-            itemDiv.addEventListener('click', () => {
-                playSong(newIndex);
-            });
-
-            arrayDiv.appendChild(itemDiv);
-        });
-    }
-
-    // Event listener for the playlist button
-
-    playlistButton.addEventListener('click', () => {
-        const arrayDiv = document.querySelector('.array');
-        arrayDiv.innerHTML = '';
-        isPlaylist = true;
-        songs = playlist.filter((song, index, self) =>
-            index === self.findIndex((s) => s.title === song.title)
-        );
-
-        // Loop through filtered songs and render them
-        songs.forEach((song, index) => {
-            const itemDiv = document.createElement('div');
-            itemDiv.className = 'item flex justify-between items-center bg-gray-700 rounded-xl p-2 max-md:p-1 mx-4 max-md:mx-2 min-md:hover:bg-gray-600 duration-300 cursor-pointer';
-            itemDiv.dataset.index = index;
-            itemDiv.innerHTML =
-                `<div class="text-white flex items-center gap-x-4 max-md:gap-x-2">
-                <img src="${song.image}" class="max-md:max-md:h-12 max-md:w-20 w-36 h-20 object-cover rounded-lg object-top" alt="${song.title}">
-                <div class="text">
-                    <h2 class="max-md:text-base song-title font-semibold text-xl max-[500px]:text-[13.5px]">${song.title}</h2>
-                    <p class="song-artist max-md:text-sm text-gray-300 max-[500px]:text-[12px]">${song.artist}</p>
-                </div>
-            </div>
-            <div class="song-play flex items-center gap-x-2 mr-3 max-md:mr-2 max-md:gap-x-1">
-                <div class="visualizer hidden">
-                    <div class="bar max-md:w-[2px] bar1"></div>
-                    <div class="bar max-md:w-[2px] bar2"></div>
-                    <div class="bar max-md:w-[2px] bar3"></div>
-                    <div class="bar max-md:w-[2px] bar4"></div>
-                    <div class="bar max-md:w-[2px] bar5"></div>
-                </div>
-                <p class="text-5xl remove-from-playlist text-[#2b8bff] cursor-pointer hover:text-[#29ecfe] max-md:text-2xl "><i class='bx bx-minus'></i></p>
-                
-            </div>`;
-
-            // Remove button ka event listener
-            itemDiv.querySelector('.remove-from-playlist').addEventListener('click', (e) => {
-                e.stopPropagation(); // Ye ensure karega ki parent click event trigger na ho
-                removeFromPlaylist(index);
-            });
-
-            // Poore itemDiv pe click karne par song play hoga
-            itemDiv.addEventListener('click', () => {
-                playSong(index);
-            });
-
-            arrayDiv.appendChild(itemDiv);
-        });
+    title?.addEventListener('click', () => {
+        isPlaylist = false;
+        fetching('Osho.json');
+        heading.innerHTML = `Osho Audio Discourses 🔥`;
     });
 
-    function loadSongList() {
-        const arrayDiv = document.querySelector('.array');
-        arrayDiv.innerHTML = '';
+    playlistButton?.addEventListener('click', () => {
+        isPlaylist = true;
+        songs = [...new Set(playlist.map(song => song.title))]
+            .map(title => playlist.find(song => song.title === title));
+        renderSongs(songs, true);
+        heading.innerHTML = `Your Playlist 🔥`;
+    });
 
-        songs.forEach((song, index) => {
-            const itemDiv = document.createElement('div');
-            itemDiv.className = 'item flex justify-between items-center bg-gray-700 rounded-xl p-2 max-md:p-1 mx-4 max-md:mx-2 min-md:hover:bg-gray-600 duration-300 cursor-pointer';
-            itemDiv.dataset.index = index;
-            itemDiv.innerHTML =
-                `<div class="text-white flex items-center gap-x-4 max-md:gap-x-2">
-                <img src="${song.image}" class="max-md:max-md:h-12 max-md:w-20 w-36 h-20 object-cover rounded-lg object-top" alt="${song.title}">
-                <div class="text">
-                    <h2 class="max-md:text-base song-title font-semibold text-xl max-[500px]:text-[13.5px]">${song.title}</h2>
-                    <p class="song-artist max-md:text-sm text-gray-300 max-[500px]:text-[12px]">${song.artist}</p>
-                </div>
-            </div>
-            <div class="song-play flex items-center gap-x-2 mr-3 max-md:mr-2 max-md:gap-x-1">
-                <div class="visualizer hidden">
-                    <div class="bar max-md:w-[2px] bar1"></div>
-                    <div class="bar max-md:w-[2px] bar2"></div>
-                    <div class="bar max-md:w-[2px] bar3"></div>
-                    <div class="bar max-md:w-[2px] bar4"></div>
-                    <div class="bar max-md:w-[2px] bar5"></div>
-                </div>
-                <p class="text-5xl add-to-playlist  text-[#2b8bff] cursor-pointer hover:text-[#29ecfe] max-md:text-2xl "><i class='bx bx-plus'></i></p>
-                
-            </div>`
-                ;
-
-            itemDiv.addEventListener('click', (event) => {
-                const addToPlaylistButton = event.target.closest('.add-to-playlist');
-                if (addToPlaylistButton) {
-                    event.stopPropagation();
-
-                    const imageURL = trimAndDecodeURL(addToPlaylistButton.parentElement.parentElement.children[0].children[0].src);
-                    console.log(imageURL);
-                    const title = addToPlaylistButton.parentElement.parentElement.children[0].children[1].children[0].textContent;
-                    const artist = addToPlaylistButton.parentElement.parentElement.children[0].children[1].children[1].textContent;
-
-                    let fileURL;
-                    fileURL = `https://itsnjedits.github.io/musicplayer/Audio/${title}.mp3`;
-
-                    const songData = {
-                        image: imageURL,
-                        file: fileURL,
-                        title: title,
-                        artist: artist
-                    };
-
-                    playlist.push(songData);
-                    console.log(JSON.stringify(playlist, null, 2));
-                    return;
-                }
-                playSong(index);
-            });
-
-            arrayDiv.appendChild(itemDiv);
-        });
-    }
-
-
-function fetching(filename) {
-    fetch('Osho.json')
-        .then(response => response.json())
-        .then(seriesList => {
-            songs = [];
-
-            seriesList.forEach(series => {
-                // Step 1: Sort this series.files by actual number
-                const sortedFiles = series.files.slice().sort((a, b) => {
-                    const numA = parseInt(a.match(/(\d+)\.mp3$/)?.[1] || '0');
-                    const numB = parseInt(b.match(/(\d+)\.mp3$/)?.[1] || '0');
-                    return numA - numB;
-                });
-
-                // Step 2: Push files into songs list with correct title
-                sortedFiles.forEach(file => {
-                    const fileName = file.split('/').pop();
-                    const match = fileName.match(/(\d+)\.mp3$/);
-                    const number = match ? match[1] : '00';
-
-                    songs.push({
-                        title: `${series.series} ${number}`,
-                        artist: series.artist,
-                        image: series.image,
-                        file: file
-                    });
-                });
-            });
-
-            // No need to sort songs here again (they’re already grouped and sorted by series)
-            loadSongList();
-        })
-        .catch(error => console.error('Error fetching songs:', error));
-}
-fetching('Osho.json')
-
-    title.addEventListener('click', () => {
-        fetching('Osho.json')
-        isPlaylist = false;
-        document.querySelector('.without-ads').innerHTML = `Osho Audio Discourses 🔥`
-    })
-
-    playlistButton.addEventListener('click', () => {
-        document.querySelector('.without-ads').innerHTML = `Your Playlist 🔥`
-    })
+    fetching('Osho.json');
 
     function disableAllButtons() {
         playPauseButton.disabled = true;
@@ -280,12 +180,8 @@ fetching('Osho.json')
 
     disableAllButtons();
 
-
-    
-
     function playSong(index) {
-        mainContainer.classList.remove("mb-28");
-        mainContainer.classList.remove("max-md:mb-20");
+        mainContainer.classList.remove("mb-28", "max-md:mb-20");
         if (window.innerWidth < 768) {
             mainContainer.classList.add("mb-32");
             mainContainer.classList.remove("mb-56");
@@ -294,54 +190,39 @@ fetching('Osho.json')
             mainContainer.classList.remove("mb-32");
         }
 
-        // Handle invalid index
-        if (index < 0) return;
-
-        if (index >= songs.length) {
-            if (isLooping) {
-                index = 0; // Restart from first song
-            } else {
-                // Stop playback on last song
-            }
-        }
+        if (index < 0 || index >= songs.length) return;
 
         currentIndex = index;
         const song = songs[currentIndex];
 
-        // Stop current playback only if audio is playing
-        if (!audio.paused) {
-            audio.pause();
-        }
-
-        // Ensure previous event listeners are removed to prevent duplicate calls
+        if (!audio.paused) audio.pause();
         audio.onended = null;
 
-        // Load new song
-        if (!isPlaylist) {
-            audio.src = `https://itsnjedits.github.io/musicplayer/${song.file}`;
-        } else {
-            audio.src = song.file.replace("https://itsnjedits.github.io/osho", "https://itsnjedits.github.io/musicplayer");
-        }
+        audio.src = isPlaylist
+            ? song.file.replace("https://itsnjedits.github.io/osho", "https://itsnjedits.github.io/musicplayer")
+            : `https://itsnjedits.github.io/musicplayer/${song.file}`;
 
-        console.log(audio.src);
-        audio.load(); // Ensure the new song is loaded properly
-
+        audio.load();
         audio.playbackRate = currentPlaybackRate;
 
         audio.play().then(() => {
             musicplayer.style.animationPlayState = 'running';
-        }).catch(error => console.error("Playback error:", error));
+        }).catch(console.error);
 
         updatePlayer(song);
         enableAllButtons();
 
-        // Fix song skipping issue
         audio.onended = () => {
-            if (currentIndex === songs.length - 1 && !isLooping) {
-                return; // Stop playback at last song if looping is off
-            }
-            playSong(currentIndex + 1); // Play next song
+            if (currentIndex === songs.length - 1 && !isLooping) return;
+            playSong(currentIndex + 1);
         };
+    }
+
+    function updatePlayer(song) {
+        songImage.src = song.image;
+        songTitle.textContent = song.title;
+        songArtist.textContent = song.artist;
+        songDescription.textContent = song.title;
     }
 
 
