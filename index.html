@@ -295,7 +295,10 @@ header{
         <div class="musicplayer bg-gray-900 text-white rounded-lg shadow-lg p-4 flex flex-col max-w-6xl w-[90%] max-md:w-[100%] max-md:rounded-none max-md:p-2">
             <!-- Song Description -->
             <div class="song-description mb-4 max-md:mb-2 items-center gap-x-4 max-md:gap-x-2">
-                <img id="song-image" src="" alt="Song Image" class="h-20 w-36 max-md:w-20 max-md:h-12 object-cover rounded-lg">
+                <div class="w-32 aspect-[4/3] overflow-hidden rounded-lg max-md:w-24">
+  <img id="song-image" src="" alt="Song Image" class="w-full h-full object-cover">
+</div>
+
                 <div>
                     <h2 class="max-md:text-base song-title font-semibold text-xl max-[500px]:text-[13.5px]">Song Title</h2>
                     <p class="song-artist max-md:text-sm text-gray-300 max-[500px]:text-[12px]">Artist Name</p>
