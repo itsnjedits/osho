@@ -2,7 +2,7 @@
   {
     "series": "Asambhav Kranti",
     "artist": "Osho",
-    "image": "Thumbnails/osho18_thumbnail.jpg",
+    "image": "Thumbnails/osho12_thumbnail.jpg",
     "files": [
       "Audio/Asambhav Kranti 01.mp3",
       "Audio/Asambhav Kranti 02.mp3",
@@ -73,21 +73,6 @@
       "Audio/Geeta Darshan Vol-1 & 2 16.mp3",
       "Audio/Geeta Darshan Vol-1 & 2 17.mp3",
       "Audio/Geeta Darshan Vol-1 & 2 18.mp3"
-    ]
-  },
-  {
-    "series": "Mahavir Ya Mahavinash",
-    "artist": "Osho",
-    "image": "Thumbnails/osho8_thumbnail.jpg",
-    "files": [
-      "Audio/Mahavir Ya Mahavinash 01.mp3",
-      "Audio/Mahavir Ya Mahavinash 02.mp3",
-      "Audio/Mahavir Ya Mahavinash 03.mp3",
-      "Audio/Mahavir Ya Mahavinash 04.mp3",
-      "Audio/Mahavir Ya Mahavinash 05.mp3",
-      "Audio/Mahavir Ya Mahavinash 07.mp3",
-      "Audio/Mahavir Ya Mahavinash 08.mp3",
-      "Audio/Mahavir Ya Mahavinash 09.mp3"
     ]
   },
   {
