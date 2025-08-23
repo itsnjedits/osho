@@ -1,22 +1,5 @@
 [
   {
-    "series": "Asambhav Kranti",
-    "artist": "Osho",
-    "image": "Thumbnails/osho12_thumbnail.jpg",
-    "files": [
-      "Audio/Asambhav Kranti 01.mp3",
-      "Audio/Asambhav Kranti 02.mp3",
-      "Audio/Asambhav Kranti 03.mp3",
-      "Audio/Asambhav Kranti 04.mp3",
-      "Audio/Asambhav Kranti 05.mp3",
-      "Audio/Asambhav Kranti 06.mp3",
-      "Audio/Asambhav Kranti 07.mp3",
-      "Audio/Asambhav Kranti 08.mp3",
-      "Audio/Asambhav Kranti 09.mp3",
-      "Audio/Asambhav Kranti 10.mp3"
-    ]
-  },
-  {
     "series": "Tao Upanishad",
     "artist": "Osho",
     "image": "Thumbnails/osho14_thumbnail.jpg",
@@ -116,3 +99,4 @@
     ]
   }
 ]
+
