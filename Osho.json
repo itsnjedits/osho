@@ -34,31 +34,6 @@
     ]
   },
   {
-    "series": "Geeta Darshan Vol-1 & 2",
-    "artist": "Osho",
-    "image": "Thumbnails/osho4_thumbnail.jpg",
-    "files": [
-      "Audio/Geeta Darshan Vol-1 & 2 01.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 02.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 03.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 04.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 05.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 06.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 07.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 08.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 09.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 10.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 11.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 12.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 13.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 14.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 15.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 16.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 17.mp3",
-      "Audio/Geeta Darshan Vol-1 & 2 18.mp3"
-    ]
-  },
-  {
     "series": "Sahaj Yog",
     "artist": "Osho",
     "image": "Thumbnails/osho11_thumbnail.jpg",
@@ -99,4 +74,5 @@
     ]
   }
 ]
+
 
