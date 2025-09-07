@@ -34,6 +34,23 @@
     ]
   },
   {
+    "series": "Shiv Sutra",
+    "artist": "Osho",
+    "image": "Thumbnails/osho13_thumbnail.jpg",
+    "files": [
+      "Audio/Shiv Sutra 01.mp3",
+      "Audio/Shiv Sutra 02.mp3",
+      "Audio/Shiv Sutra 03.mp3",
+      "Audio/Shiv Sutra 04.mp3",
+      "Audio/Shiv Sutra 05.mp3",
+      "Audio/Shiv Sutra 06.mp3",
+      "Audio/Shiv Sutra 07.mp3",
+      "Audio/Shiv Sutra 08.mp3",
+      "Audio/Shiv Sutra 09.mp3",
+      "Audio/Shiv Sutra 10.mp3"
+    ]
+  },
+  {
     "series": "Sahaj Yog",
     "artist": "Osho",
     "image": "Thumbnails/osho11_thumbnail.jpg",
@@ -74,5 +91,3 @@
     ]
   }
 ]
-
-
