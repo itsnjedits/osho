@@ -21,14 +21,6 @@
     "artist": "Osho",
     "image": "Thumbnails/osho11_thumbnail.jpg",
     "files": [
-      "Audio/Sahaj Yog 01.mp3",
-      "Audio/Sahaj Yog 02.mp3",
-      "Audio/Sahaj Yog 03.mp3",
-      "Audio/Sahaj Yog 04.mp3",
-      "Audio/Sahaj Yog 05.mp3",
-      "Audio/Sahaj Yog 06.mp3",
-      "Audio/Sahaj Yog 07.mp3",
-      "Audio/Sahaj Yog 08.mp3",
       "Audio/Sahaj Yog 09.mp3",
       "Audio/Sahaj Yog 10.mp3",
       "Audio/Sahaj Yog 11.mp3",
@@ -57,3 +49,4 @@
     ]
   }
 ]
+
