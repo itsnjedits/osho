@@ -4,12 +4,6 @@
     "artist": "Osho",
     "image": "Thumbnails/osho10_thumbnail.jpg",
     "files": [
-      "Audio/Shiv Sutra 01.mp3",
-      "Audio/Shiv Sutra 02.mp3",
-      "Audio/Shiv Sutra 03.mp3",
-      "Audio/Shiv Sutra 04.mp3",
-      "Audio/Shiv Sutra 05.mp3",
-      "Audio/Shiv Sutra 06.mp3",
       "Audio/Shiv Sutra 07.mp3",
       "Audio/Shiv Sutra 08.mp3",
       "Audio/Shiv Sutra 09.mp3",
@@ -17,20 +11,49 @@
     ]
   },
   {
+    "series": "Tao Upanishad",
+    "artist": "Osho",
+    "image": "Thumbnails/osho14_thumbnail.jpg",
+    "files": [
+      "Audio/Tao Upanishad 41.mp3",
+      "Audio/Tao Upanishad 42.mp3",
+      "Audio/Tao Upanishad 43.mp3",
+      "Audio/Tao Upanishad 44.mp3",
+      "Audio/Tao Upanishad 45.mp3"
+    ]
+  },
+  {
+    "series": "Vigyan Bhairav Tantra",
+    "artist": "Osho",
+    "image": "Thumbnails/osho9_thumbnail.jpg",
+    "files": [
+      "Audio/Vigyan Bhairav Tantra 31.mp3",
+      "Audio/Vigyan Bhairav Tantra 32.mp3",
+      "Audio/Vigyan Bhairav Tantra 33.mp3",
+      "Audio/Vigyan Bhairav Tantra 34.mp3",
+      "Audio/Vigyan Bhairav Tantra 35.mp3"
+    ]
+  },
+  {
     "series": "Sahaj Yog",
     "artist": "Osho",
     "image": "Thumbnails/osho11_thumbnail.jpg",
     "files": [
-      "Audio/Sahaj Yog 11.mp3",
-      "Audio/Sahaj Yog 12.mp3",
-      "Audio/Sahaj Yog 13.mp3",
-      "Audio/Sahaj Yog 14.mp3",
-      "Audio/Sahaj Yog 15.mp3",
-      "Audio/Sahaj Yog 16.mp3",
       "Audio/Sahaj Yog 17.mp3",
       "Audio/Sahaj Yog 18.mp3",
       "Audio/Sahaj Yog 19.mp3",
       "Audio/Sahaj Yog 20.mp3"
+    ]
+  },
+  {
+    "series": "Gahre Pani Paith",
+    "artist": "Osho",
+    "image": "Thumbnails/osho8_thumbnail.jpg",
+    "files": [
+      "Audio/Gahre Pani Paith 01.mp3",
+      "Audio/Gahre Pani Paith 02.mp3",
+      "Audio/Gahre Pani Paith 03.mp3",
+      "Audio/Gahre Pani Paith 04.mp3"
     ]
   },
   {
@@ -47,6 +70,3 @@
     ]
   }
 ]
-
-
-
