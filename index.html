@@ -24,6 +24,17 @@
     <!-- Boxicons link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
+    <!-- PWA Essentials -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111827">
+
+<!-- iOS Support -->
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Osho">
+
+
 </head>
 <style>
     * {
@@ -356,6 +367,14 @@ header{
         }
     </script>
     <script src="script.js"></script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('✅ Osho Service Worker Registered'))
+      .catch(err => console.error('SW failed:', err));
+  }
+</script>
+
     
 </body>
 </html>
