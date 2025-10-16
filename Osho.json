@@ -1,16 +1,5 @@
 [
   {
-    "series": "Shiv Sutra",
-    "artist": "Osho",
-    "image": "Thumbnails/osho10_thumbnail.jpg",
-    "files": [
-      "Audio/Shiv Sutra 07.mp3",
-      "Audio/Shiv Sutra 08.mp3",
-      "Audio/Shiv Sutra 09.mp3",
-      "Audio/Shiv Sutra 10.mp3"
-    ]
-  },
-  {
     "series": "Tao Upanishad",
     "artist": "Osho",
     "image": "Thumbnails/osho14_thumbnail.jpg",
@@ -67,6 +56,40 @@
       "Audio/Vysat Jeevan Me Satya Ki Khoj 04.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 05.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 06.mp3"
+    ]
+  },
+  {
+    "series": "Ashtavakra Maha Geeta",
+    "artist": "Osho",
+    "image": "Thumbnails/osho4_thumbnail.jpg",
+    "files": [
+      "Audio/Ashtavakra Maha Geeta 01.mp3",
+      "Audio/Ashtavakra Maha Geeta 02.mp3",
+      "Audio/Ashtavakra Maha Geeta 03.mp3",
+      "Audio/Ashtavakra Maha Geeta 04.mp3",
+      "Audio/Ashtavakra Maha Geeta 05.mp3",
+      "Audio/Ashtavakra Maha Geeta 06.mp3",
+      "Audio/Ashtavakra Maha Geeta 07.mp3",
+      "Audio/Ashtavakra Maha Geeta 08.mp3",
+      "Audio/Ashtavakra Maha Geeta 09.mp3",
+      "Audio/Ashtavakra Maha Geeta 10.mp3"
+    ]
+  },
+  {
+    "series": "Mahaveer Vani",
+    "artist": "Osho",
+    "image": "Thumbnails/osho20_thumbnail.jpg",
+    "files": [
+      "Audio/Mahaveer Vani 01.mp3",
+      "Audio/Mahaveer Vani 02.mp3",
+      "Audio/Mahaveer Vani 03.mp3",
+      "Audio/Mahaveer Vani 04.mp3",
+      "Audio/Mahaveer Vani 05.mp3",
+      "Audio/Mahaveer Vani 06.mp3",
+      "Audio/Mahaveer Vani 07.mp3",
+      "Audio/Mahaveer Vani 08.mp3",
+      "Audio/Mahaveer Vani 09.mp3",
+      "Audio/Mahaveer Vani 10.mp3"
     ]
   }
 ]
