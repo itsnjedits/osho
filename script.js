@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const audio = new Audio();
+    audio.crossOrigin = "anonymous";
+
     const playlist = [];
     let songs = [];
     let currentIndex = 0;
@@ -54,6 +56,116 @@ document.addEventListener('DOMContentLoaded', () => {
     } = elements;
 
     musicplayer.style.animationPlayState = 'paused';
+
+    // RECORDING SECTION
+let mediaRecorder;
+let audioChunks = [];
+let isRecording = false;
+let timerInterval;
+let seconds = 0;
+
+function formatTime(sec) {
+    let m = Math.floor(sec / 60);
+    let s = sec % 60;
+    return (m < 10 ? "0"+m : m) + ":" + (s < 10 ? "0"+s : s);
+}
+
+// AUDIO SETUP
+const audioContext = new AudioContext();
+audio.crossOrigin = "anonymous";    // <-- IMPORTANT
+const sourceNode = audioContext.createMediaElementSource(audio);
+const destination = audioContext.createMediaStreamDestination();
+sourceNode.connect(destination);
+sourceNode.connect(audioContext.destination);
+
+const recordBtn = document.querySelector(".recordBtn");
+const pauseBtn = document.querySelector(".pauseBtn");
+const resumeBtn = document.querySelector(".resumeBtn");
+const stopBtn = document.querySelector(".stopBtn");
+const timerBtn = document.querySelector(".timerBtn");
+const timeText = document.querySelector(".timeText");
+
+recordBtn.addEventListener("click", () => {
+
+    if (isRecording) return;
+    isRecording = true;
+
+    mediaRecorder = new MediaRecorder(destination.stream);
+    audioChunks = [];
+    seconds = 0;
+    timeText.innerText = "00:00";
+
+    timerBtn.classList.remove("hidden");
+
+    timerInterval = setInterval(() => {
+        seconds++;
+        timeText.innerText = formatTime(seconds);
+    }, 1000);
+
+    mediaRecorder.start();
+
+    recordBtn.classList.add("hidden");
+    pauseBtn.classList.remove("hidden");
+    stopBtn.classList.remove("hidden");
+
+    mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+});
+
+pauseBtn.addEventListener("click", () => {
+    if (mediaRecorder?.state === "recording") {
+        mediaRecorder.pause();
+
+        // TIMER STOP
+        clearInterval(timerInterval);
+
+        pauseBtn.classList.add("hidden");
+        resumeBtn.classList.remove("hidden");
+    }
+});
+
+resumeBtn.addEventListener("click", () => {
+    if (mediaRecorder?.state === "paused") {
+        mediaRecorder.resume();
+
+        // TIMER RESUME
+        timerInterval = setInterval(() => {
+            seconds++;
+            timeText.innerText = formatTime(seconds);
+        }, 1000);
+
+        resumeBtn.classList.add("hidden");
+        pauseBtn.classList.remove("hidden");
+    }
+});
+
+stopBtn.addEventListener("click", () => {
+
+    if (!isRecording) return;
+    isRecording = false;
+
+    clearInterval(timerInterval);
+
+    mediaRecorder.stop();
+
+    mediaRecorder.onstop = () => {
+        const blob = new Blob(audioChunks, { type: "audio/webm" });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "recorded_" + Date.now() + ".webm";
+        a.click();
+    };
+
+    recordBtn.classList.remove("hidden");
+    pauseBtn.classList.add("hidden");
+    resumeBtn.classList.add("hidden");
+    stopBtn.classList.add("hidden");
+    timerBtn.classList.add("hidden");
+
+    timeText.innerText = "00:00";
+});
+
 
     const trimAndDecodeURL = (url) => {
         const baseURL = 'https://itsnjedits.github.io/osho/';
@@ -225,8 +337,6 @@ document.addEventListener('DOMContentLoaded', () => {
         songDescription.textContent = song.title;
     }
 
-
-
     function updatePlayer(song) {
         songImage.src = song.image;
         songTitle.textContent = song.title;
@@ -365,36 +475,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Auto-next feature
     audio.addEventListener('ended', playNextSong);
-
-    // Searching Songs
-    const searchInput = document.getElementById('search-input');
-    const searchNextBtn = document.getElementById('search-next-btn');
-
-    searchInput.addEventListener('input', () => searchWebsite(false));
-    searchNextBtn.addEventListener('click', () => searchWebsite(true));
-
-    let searchResultIndex = -1;
-
-    function searchWebsite(findNext) {
-        const searchTerm = searchInput.value.trim().toLowerCase();
-        const elements = document.querySelectorAll('.item');
-
-        elements.forEach(el => {
-            el.children[0].children[1].children[0].style.color = '';
-            el.children[0].children[1].children[1].style.color = '';
-            el.classList.remove('bg-gray-900');
-        });
-
-        if (searchTerm) {
-            for (let i = findNext ? searchResultIndex + 1 : 0; i < elements.length; i++) {
-                if (elements[i].textContent.toLowerCase().includes(searchTerm)) {
-                    searchResultIndex = i;
-                    highlightElement(elements[i]);
-                    break;
-                }
-            }
-        }
-    }
 
     function highlightElement(el) {
         el.children[0].children[1].children[0].style.color = 'yellow';
