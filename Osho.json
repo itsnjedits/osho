@@ -12,18 +12,6 @@
     ]
   },
   {
-    "series": "Vigyan Bhairav Tantra",
-    "artist": "Osho",
-    "image": "Thumbnails/osho9_thumbnail.jpg",
-    "files": [
-      "Audio/Vigyan Bhairav Tantra 31.mp3",
-      "Audio/Vigyan Bhairav Tantra 32.mp3",
-      "Audio/Vigyan Bhairav Tantra 33.mp3",
-      "Audio/Vigyan Bhairav Tantra 34.mp3",
-      "Audio/Vigyan Bhairav Tantra 35.mp3"
-    ]
-  },
-  {
     "series": "Sahaj Yog",
     "artist": "Osho",
     "image": "Thumbnails/osho11_thumbnail.jpg",
@@ -82,3 +70,4 @@
     ]
   }
 ]
+
