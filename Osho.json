@@ -15,15 +15,6 @@
     ]
   },
   {
-    "series": "Sahaj Yog",
-    "artist": "Osho",
-    "image": "Thumbnails/osho11_thumbnail.jpg",
-    "files": [
-      "Audio/Sahaj Yog 19.mp3",
-      "Audio/Sahaj Yog 20.mp3"
-    ]
-  },
-  {
     "series": "Vysat Jeevan Me Satya Ki Khoj",
     "artist": "Osho",
     "image": "Thumbnails/osho3_thumbnail.jpg",
@@ -71,4 +62,5 @@
     ]
   }
 ]
+
 
