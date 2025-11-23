@@ -218,7 +218,7 @@ stopBtn.addEventListener("click", () => {
         const image = trimAndDecodeURL(parent.querySelector('img')?.src || '');
         const title = parent.querySelector('.song-title')?.textContent || 'Unknown Title';
         const artist = parent.querySelector('.song-artist')?.textContent || 'Unknown Artist';
-        const file = `https://itsnjedits.github.io/soundaura/Audio/${title}.mp3`;
+        const file = `https://itsnjedits.github.io/store/Audio/${title}.mp3`;
 
         const songData = { image, title, artist, file };
         playlist.push(songData);
@@ -311,8 +311,8 @@ stopBtn.addEventListener("click", () => {
         audio.onended = null;
 
         audio.src = isPlaylist
-            ? song.file.replace("https://itsnjedits.github.io/osho", "https://itsnjedits.github.io/soundaura")
-            : `https://itsnjedits.github.io/soundaura/${song.file}`;
+            ? song.file.replace("https://itsnjedits.github.io/osho", "https://itsnjedits.github.io/store")
+            : `https://itsnjedits.github.io/store/${song.file}`;
 
         audio.load();
         audio.playbackRate = currentPlaybackRate;
