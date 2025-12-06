@@ -14,6 +14,7 @@
       "Audio/Tao Upanishad 50.mp3"
     ]
   },
+
   {
     "series": "Vysat Jeevan Me Satya Ki Khoj",
     "artist": "Osho",
@@ -23,6 +24,28 @@
       "Audio/Vysat Jeevan Me Satya Ki Khoj 04.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 05.mp3",
       "Audio/Vysat Jeevan Me Satya Ki Khoj 06.mp3"
+    ]
+  },
+  {
+    "series": "Gahre Pani Paith",
+    "artist": "Osho",
+    "image": "Thumbnails/osho12_thumbnail.jpg",
+    "files": [
+      "Audio/Gahre Pani Paith 01.mp3",
+      "Audio/Gahre Pani Paith 02.mp3",
+      "Audio/Gahre Pani Paith 03.mp3",
+      "Audio/Gahre Pani Paith 04.mp3"
+    ]
+  },
+  {
+    "series": "Prem Darshan",
+    "artist": "Osho",
+    "image": "Thumbnails/osho9_thumbnail.jpg",
+    "files": [
+      "Audio/Prem Darshan 01.mp3",
+      "Audio/Prem Darshan 02.mp3",
+      "Audio/Prem Darshan 03.mp3",
+      "Audio/Prem Darshan 04.mp3"
     ]
   },
   {
