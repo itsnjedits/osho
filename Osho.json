@@ -1,9 +1,19 @@
 [
   {
     "series": "Tao Upanishad",
-   "artist": "Osho",
+    "artist": "Osho",
     "image": "Thumbnails/osho14_thumbnail.jpg",
     "files": [
+      "Audio/Tao Upanishad 01.mp3",
+      "Audio/Tao Upanishad 02.mp3",
+      "Audio/Tao Upanishad 03.mp3",
+      "Audio/Tao Upanishad 04.mp3",
+      "Audio/Tao Upanishad 05.mp3",
+      "Audio/Tao Upanishad 06.mp3",
+      "Audio/Tao Upanishad 07.mp3",
+      "Audio/Tao Upanishad 08.mp3",
+      "Audio/Tao Upanishad 09.mp3",
+      "Audio/Tao Upanishad 10.mp3",
       "Audio/Tao Upanishad 51.mp3",
       "Audio/Tao Upanishad 52.mp3",
       "Audio/Tao Upanishad 53.mp3",
@@ -21,17 +31,16 @@
     "artist": "Osho",
     "image": "Thumbnails/osho20_thumbnail.jpg",
     "files": [
-      "Audio/Tao Upanishad 21.mp3",
-      "Audio/Tao Upanishad 22.mp3",
-      "Audio/Tao Upanishad 23.mp3",
-      "Audio/Tao Upanishad 24.mp3",
-      "Audio/Tao Upanishad 25.mp3",
-      "Audio/Tao Upanishad 26.mp3",
-      "Audio/Tao Upanishad 27.mp3",
-      "Audio/Tao Upanishad 28.mp3",
-      "Audio/Tao Upanishad 29.mp3",
-      "Audio/Tao Upanishad 30.mp3"
+      "Audio/Mahaveer Vani 21.mp3",
+      "Audio/Mahaveer Vani 22.mp3",
+      "Audio/Mahaveer Vani 23.mp3",
+      "Audio/Mahaveer Vani 24.mp3",
+      "Audio/Mahaveer Vani 25.mp3",
+      "Audio/Mahaveer Vani 26.mp3",
+      "Audio/Mahaveer Vani 27.mp3",
+      "Audio/Mahaveer Vani 28.mp3",
+      "Audio/Mahaveer Vani 29.mp3",
+      "Audio/Mahaveer Vani 30.mp3"
     ]
   }
 ]
-
