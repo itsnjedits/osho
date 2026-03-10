@@ -4,16 +4,6 @@
     "artist": "Osho",
     "image": "Thumbnails/osho14_thumbnail.jpg",
     "files": [
-      "Audio/Tao Upanishad 01.mp3",
-      "Audio/Tao Upanishad 02.mp3",
-      "Audio/Tao Upanishad 03.mp3",
-      "Audio/Tao Upanishad 04.mp3",
-      "Audio/Tao Upanishad 05.mp3",
-      "Audio/Tao Upanishad 06.mp3",
-      "Audio/Tao Upanishad 07.mp3",
-      "Audio/Tao Upanishad 08.mp3",
-      "Audio/Tao Upanishad 09.mp3",
-      "Audio/Tao Upanishad 10.mp3",
       "Audio/Tao Upanishad 51.mp3",
       "Audio/Tao Upanishad 52.mp3",
       "Audio/Tao Upanishad 53.mp3",
@@ -24,6 +14,23 @@
       "Audio/Tao Upanishad 58.mp3",
       "Audio/Tao Upanishad 59.mp3",
       "Audio/Tao Upanishad 60.mp3"
+    ]
+  },
+  {
+    "series": "Bin Bati Bin Tel (बिन बाती बिन तेल)",
+    "artist": "Osho",
+    "image": "Thumbnails/osho9_thumbnail.jpg",
+    "files": [
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 01.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 02.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 03.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 04.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 05.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 06.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 07.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 08.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 09.mp3",
+      "Audio/Bin Bati Bin Tel (बिन बाती बिन तेल) 10.mp3"
     ]
   },
   {
